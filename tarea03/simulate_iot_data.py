@@ -8,6 +8,7 @@ import random
 import time
 
 import requests
+from decouple import config
 
 
 # Function to simulate sensor data
@@ -21,7 +22,7 @@ def simulate_sensor_data():
 
 
 # ThingSpeak API parameters
-THINGSPEAK_API_KEY = "YOUR_THINGSPEAK_API_KEY"
+THINGSPEAK_API_KEY = config("THINGSPEAK_API_KEY")
 THINGSPEAK_URL = "https://api.thingspeak.com/update"
 
 while True:
