@@ -5,7 +5,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 """
-Simulación de dispositivos IoT que generan datos
+Tarea 5 de computo ubicuo
 """
 
 import random
@@ -15,6 +15,9 @@ import pandas as pd
 
 
 def edge_device(device_id):
+    """
+    Simulación de dispositivos IoT que generan datos
+    """
     data = {
         "timestamp": [],
         "divice_id": [],
@@ -33,6 +36,16 @@ def edge_device(device_id):
         # Espera de 1 segundo entre lecturas
         time.sleep(1)
     return pd.DataFrame(data)
+
+
+def fog_node(device_data_list):
+    """
+    Simulación de Fog Computing: Agregación de datos múltiples dispositivos
+    """
+    aggregated_data = pd.concat(device_data_list)
+    aggregated_data["avg_temperature"] = aggregated_data["temperature"].mean()
+    aggregated_data["avg_humidity"] = aggregated_data["humidity"].mean()
+    return aggregated_data
 
 
 def main():
