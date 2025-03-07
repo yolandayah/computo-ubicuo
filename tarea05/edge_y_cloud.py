@@ -48,6 +48,16 @@ def fog_node(device_data_list):
     return aggregated_data
 
 
+def roof_node(fog_data_list):
+    """
+    Simulación de Roff Computing: Coordinación y optimización de recursos
+    """
+    roof_data = pd.concat(fog_data_list)
+    roof_data["overall_avg_temperature"] = roof_data["avg_temperature"].mean()
+    roof_data["overall_avg_humidity"] = roof_data["avg_humidity"].mean()
+    return roof_data
+
+
 def main():
     """
     Comentario de la función
