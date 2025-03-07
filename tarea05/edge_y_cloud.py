@@ -24,6 +24,7 @@ def edge_device(device_id):
         "temperature": [],
         "humidity": [],
     }
+
     # Simulación de 10 lecturas de sensor
     for _ in range(10):
         timestamp = time.time()
@@ -35,6 +36,7 @@ def edge_device(device_id):
         data["humidity"].append(humidity)
         # Espera de 1 segundo entre lecturas
         time.sleep(1)
+
     return pd.DataFrame(data)
 
 
@@ -45,6 +47,7 @@ def fog_node(device_data_list):
     aggregated_data = pd.concat(device_data_list)
     aggregated_data["avg_temperature"] = aggregated_data["temperature"].mean()
     aggregated_data["avg_humidity"] = aggregated_data["humidity"].mean()
+
     return aggregated_data
 
 
@@ -55,6 +58,7 @@ def roof_node(fog_data_list):
     roof_data = pd.concat(fog_data_list)
     roof_data["overall_avg_temperature"] = roof_data["avg_temperature"].mean()
     roof_data["overall_avg_humidity"] = roof_data["avg_humidity"].mean()
+
     return roof_data
 
 
