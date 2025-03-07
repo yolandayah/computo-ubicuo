@@ -62,6 +62,16 @@ def roof_node(fog_data_list):
     return roof_data
 
 
+def cloud_processing(roof_data):
+    """
+    Simulación de Cloud Computing: Almacenamiento y procesamiento avanzado
+    """
+    # Aquí podrías agregar procesamiento avanzado, almacenameinto en la nube,
+    # etc.
+    print("Datos procesados en la nube:")
+    print(roof_data)
+
+
 def main():
     """
     Comentario de la función
