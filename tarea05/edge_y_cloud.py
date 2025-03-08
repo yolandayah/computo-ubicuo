@@ -20,7 +20,7 @@ def edge_device(device_id):
     """
     data = {
         "timestamp": [],
-        "divice_id": [],
+        "device_id": [],
         "temperature": [],
         "humidity": [],
     }
