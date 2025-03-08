@@ -72,12 +72,26 @@ def cloud_processing(roof_data):
     print(roof_data)
 
 
-def main():
+def main_simulation():
     """
-    Comentario de la función
+    Función principal para la simulación
     """
-    print("Hola Mundo")
+    # Simulación de Edge Computing
+    edge_data_list = []
+
+    # Simulación de 5 dispositivos IoT
+    for i in range(5):
+        edge_data_list.append(edge_device(f"device_{i + 1}"))
+
+    # Simulación de Fog Computing
+    fog_data = fog_node(edge_data_list)
+
+    # Simulación de Roof Computing
+    roof_data = roof_node([fog_data])
+
+    # Simulación de Cloud Computing
+    cloud_processing(roof_data)
 
 
 if __name__ == "__main__":
-    main()
+    main_simulation()
