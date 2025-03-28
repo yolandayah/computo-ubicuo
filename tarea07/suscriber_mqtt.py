@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+# vi: set shiftwidth=4 tabstop=8 expandtab:
+"""
+Simulando Datos de IoT
+"""
+
 import paho.mqtt.client as mqtt
 
 # MQTT Broker configuration

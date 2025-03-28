@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+# vi: set shiftwidth=4 tabstop=8 expandtab:
+"""
+Simulando Datos de IoT
+"""
+
 import random
 import time
 
@@ -18,8 +24,8 @@ client.connect(broker, port)
 
 def publish_data():
     while True:
-        temperature = random.uniform(20.0, 25.0)
-        humidity = random.uniform(30.0, 60.0)
+        temperature = random.uniform(20.0, 25.0)  # nosec B311
+        humidity = random.uniform(30.0, 60.0)  # nosec B311
         client.publish(temperature_topic, temperature)
         client.publish(humidity_topic, humidity)
         print(f"Published: Temperature = {temperature} to topic: {temperature_topic}")
