@@ -1,0 +1,145 @@
+digraph G {
+	labelloc="t"
+	label="Mapa mental de la materia de\nComputo Ubicuo."
+	fontname="URW Chancery L, Apple Chancery, Comic Sans MS, cursive"
+	layout=twopi; graph [ranksep=2];
+    rankdir=TB;
+    node [shape=box, style="filled", fillcolor="#E0FFFF", fontname="Arial", fontsize=12];
+    edge [color="#696969", penwidth=1.0];
+
+	edge [penwidth=5 color="#f0f0ff"]
+	node [fontname="URW Chancery L, Apple Chancery, Comic Sans MS, cursive"]
+	node [style="filled" penwidth=0 fillcolor="#f0f0ffA0" fontcolor=indigo]
+
+    // Nodos principales
+    "Cómputo Ubicuo" [shape=doublecircle, fillcolor="#ADD8E6", fontsize=16, fontcolor="#000080"];
+
+    // Definición
+    "Definición" [fillcolor="#B0E0E6"];
+    "Definición" -> "Cómputo Ubicuo";
+    "Esencia" [fillcolor="#C0EEF5"];
+    "Definición" -> "Esencia";
+    "Esencia" -> "Transparencia";
+    "Esencia" -> "Invisibilidad";
+    "Esencia" -> "Interacción Natural";
+    "Objetivo" [fillcolor="#C0EEF5"];
+    "Definición" -> "Objetivo";
+    "Objetivo" -> "Computación siempre presente";
+    "Objetivo" -> "Integración en el entorno";
+
+    // Características Clave
+    "Características Clave" [fillcolor="#B0E0E6"];
+    "Características Clave" -> "Cómputo Ubicuo";
+    "Pervasividad" [fillcolor="#C0EEF5"];
+    "Características Clave" -> "Pervasividad";
+    "Pervasividad" -> "Conectividad Constante";
+    "Pervasividad" -> "Acceso en cualquier lugar/momento";
+    "Contexto-Sensibilidad" [fillcolor="#C0EEF5"];
+    "Características Clave" -> "Contexto-Sensibilidad";
+    "Contexto-Sensibilidad" -> "Adaptación al entorno";
+    "Contexto-Sensibilidad" -> "Uso de sensores";
+    "Inteligencia Ambiental" [fillcolor="#C0EEF5"];
+    "Características Clave" -> "Inteligencia Ambiental";
+    "Inteligencia Ambiental" -> "Sistemas autónomos";
+    "Inteligencia Ambiental" -> "Toma de decisiones";
+    "Autonomía" [fillcolor="#C0EEF5"];
+    "Características Clave" -> "Autonomía";
+    "Autonomía" -> "Operación sin intervención humana";
+    "Transparencia_C" [label="Transparencia", fillcolor="#C0EEF5"]; // Renombrado para evitar conflicto
+    "Características Clave" -> "Transparencia_C";
+    "Transparencia_C" -> "Tecnología imperceptible";
+    "Movilidad" [fillcolor="#C0EEF5"];
+    "Características Clave" -> "Movilidad";
+    "Movilidad" -> "Soporte a dispositivos móviles";
+    "Movilidad" -> "Comunicación fluida";
+
+    // Tecnologías Habilitadoras
+    "Tecnologías Habilitadoras" [fillcolor="#B0E0E6"];
+    "Tecnologías Habilitadoras" -> "Cómputo Ubicuo";
+    "Redes" [fillcolor="#C0EEF5"];
+    "Tecnologías Habilitadoras" -> "Redes";
+    "Redes" -> "5G/6G";
+    "Redes" -> "Wi-Fi 6E";
+    "Redes" -> "Bluetooth";
+    "Redes" -> "NFC (Near Field Communication)";
+    "Sensores_T" [label="Sensores", fillcolor="#C0EEF5"]; // Renombrado
+    "Tecnologías Habilitadoras" -> "Sensores_T";
+    "Sensores_T" -> "IoT (Internet de las Cosas)";
+    "Sensores_T" -> "Sensores ambientales";
+    "Sensores_T" -> "Biométricos";
+    "Dispositivos" [fillcolor="#C0EEF5"];
+    "Tecnologías Habilitadoras" -> "Dispositivos";
+    "Dispositivos" -> "Wearables (vestibles)";
+    "Dispositivos" -> "Smartphones";
+    "Dispositivos" -> "Dispositivos embebidos";
+    "Dispositivos" -> "Objetos inteligentes";
+    "Inteligencia Artificial (IA)" [fillcolor="#C0EEF5"];
+    "Tecnologías Habilitadoras" -> "Inteligencia Artificial (IA)";
+    "Inteligencia Artificial (IA)" -> "Machine Learning";
+    "Inteligencia Artificial (IA)" -> "Procesamiento de Lenguaje Natural (PNL)";
+    "Inteligencia Artificial (IA)" -> "Visión por Computadora";
+    "Cloud Computing" [fillcolor="#C0EEF5"];
+    "Tecnologías Habilitadoras" -> "Cloud Computing";
+    "Cloud Computing" -> "Servicios en la nube";
+    "Cloud Computing" -> "Procesamiento de datos";
+    "Edge Computing" [fillcolor="#C0EEF5"];
+    "Tecnologías Habilitadoras" -> "Edge Computing";
+    "Edge Computing" -> "Procesamiento cercano a la fuente de datos";
+    "Edge Computing" -> "Baja latencia";
+
+    // Aplicaciones
+    "Aplicaciones" [fillcolor="#B0E0E6"];
+    "Aplicaciones" -> "Cómputo Ubicuo";
+    "Hogar Inteligente (Smart Home)" [fillcolor="#C0EEF5"];
+    "Aplicaciones" -> "Hogar Inteligente (Smart Home)";
+    "Hogar Inteligente (Smart Home)" -> "Automatización del hogar";
+    "Hogar Inteligente (Smart Home)" -> "Seguridad";
+    "Salud Digital" [fillcolor="#C0EEF5"];
+    "Aplicaciones" -> "Salud Digital";
+    "Salud Digital" -> "Monitoreo remoto";
+    "Salud Digital" -> "Asistencia personalizada";
+    "Ciudades Inteligentes (Smart Cities)" [fillcolor="#C0EEF5"];
+    "Aplicaciones" -> "Ciudades Inteligentes (Smart Cities)";
+    "Ciudades Inteligentes (Smart Cities)" -> "Gestión del tráfico";
+    "Ciudades Inteligentes (Smart Cities)" -> "Eficiencia energética";
+    "Industria 4.0" [fillcolor="#C0EEF5"];
+    "Aplicaciones" -> "Industria 4.0";
+    "Industria 4.0" -> "Fábricas inteligentes";
+    "Industria 4.0" -> "Mantenimiento predictivo";
+    "Educación" [fillcolor="#C0EEF5"];
+    "Aplicaciones" -> "Educación";
+    "Educación" -> "Aprendizaje personalizado";
+    "Educación" -> "Entornos interactivos";
+    "Comercio Minorista" [fillcolor="#C0EEF5"];
+    "Aplicaciones" -> "Comercio Minorista";
+    "Comercio Minorista" -> "Experiencias de compra mejoradas";
+    "Comercio Minorista" -> "Publicidad contextual";
+
+    // Desafíos
+    "Desafíos" [fillcolor="#B0E0E6"];
+    "Desafíos" -> "Cómputo Ubicuo";
+    "Privacidad" [fillcolor="#C0EEF5"];
+    "Desafíos" -> "Privacidad";
+    "Privacidad" -> "Recopilación de datos";
+    "Privacidad" -> "Uso ético";
+    "Seguridad" [fillcolor="#C0EEF5"];
+    "Desafíos" -> "Seguridad";
+    "Seguridad" -> "Vulnerabilidades de red";
+    "Seguridad" -> "Ataques cibernéticos";
+    "Interoperabilidad" [fillcolor="#C0EEF5"];
+    "Desafíos" -> "Interoperabilidad";
+    "Interoperabilidad" -> "Estándares de comunicación";
+    "Interoperabilidad" -> "Compatibilidad de dispositivos";
+    "Gestión de Datos" [fillcolor="#C0EEF5"];
+    "Desafíos" -> "Gestión de Datos";
+    "Gestión de Datos" -> "Volumen de datos";
+    "Gestión de Datos" -> "Análisis y almacenamiento";
+    "Dependencia Tecnológica" [fillcolor="#C0EEF5"];
+    "Desafíos" -> "Dependencia Tecnológica";
+    "Dependencia Tecnológica" -> "Impacto social";
+    "Dependencia Tecnológica" -> "Brecha digital";
+    "Complejidad" [fillcolor="#C0EEF5"];
+    "Desafíos" -> "Complejidad";
+    "Complejidad" -> "Desarrollo y mantenimiento";
+    "Complejidad" -> "Gestión de sistemas distribuidos";
+}
